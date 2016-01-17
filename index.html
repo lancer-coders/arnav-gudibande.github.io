@@ -95,28 +95,8 @@
         <li><a href="#Skills">Skills</a></li>
     </ul>
 
-    <p id="demo"></p>
-
-    <script>
-    var x = document.getElementById("demo");
-
-    function getLocation() {
-      if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-          x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-      }
-
-      function showPosition(position) {
-        x.innerHTML = position.coords.latitude;
-        /*"<br>Longitude: " + position.coords.longitude;*/
-      }
-      /*document.getElementById("demo").innerHTML = getLocation();*/
-      </script>
-
     <div class="iframe">
-      <f><iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat="+document.getElementById("demo").innerHTML = getLocation()+"&lon=-121.77071970000001&name=San Jose&color=#4d4d4d&font=Futura&units=us"> </iframe></f>
+      <f><iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=37.3382080&lon=121.8863290&name=San Jose&color=#4d4d4d&font=Futura&units=us"> </iframe></f>
     </div>
 
   </div>
